@@ -44,11 +44,21 @@ const displayBeerInformation = function(beer){
 
   const beerName = document.createElement('h2');
   const beerImage = document.createElement('img');
+  const beerIngredients = document.createElement('h5')
+  const beerDescription = document.createElement('p')
+  const beerFoodPairing = document.createElement('p')
 
   beerName.textContent = beer.name;
   beerImage.src = beer.image_url;
   beerImage.width = 75;
+  // beerIngredients.textContent = beer.ingredients;
+  beerDescription.textContent = beer.description;
+  beerFoodPairing.textContent = `Enjoy with ${beer.food_pairing}`
 
-  beerInformation.appendChild(beerName);
+
   beerInformation.appendChild(beerImage);
+  beerInformation.appendChild(beerName);
+  // beerInformation.appendChild(beerIngredients);
+  beerInformation.appendChild(beerDescription);
+  beerInformation.appendChild(beerFoodPairing);
 }
