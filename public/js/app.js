@@ -53,7 +53,7 @@ const displayBeerInformation = function(beer){
   beerImage.width = 75;
   // beerIngredients.textContent = beer.ingredients;
   beerDescription.textContent = beer.description;
-  beerFoodPairing.textContent = `Enjoy with ${beer.food_pairing}`
+  beerFoodPairing.textContent = `Get plastered while you eat ${beer.food_pairing}`
 
 
   beerInformation.appendChild(beerImage);
